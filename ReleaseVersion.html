@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ReleaseVersion</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--自定义CSS-->
+    <style type="text/css">
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: #efefef url("img/background.png") no-repeat fixed bottom;
+        }
+
+        .navbar {
+            background-color: #2196f7;
+            border-radius: 0;
+            box-shadow: 0 2px 4px #888888;
+        }
+
+        .full {
+            height: 100%;
+            overflow: scroll;
+        }
+
+        .container {
+            width: 900px;
+        }
+
+        .label-logo {
+            padding: 20px;
+        }
+
+        .a4 {
+            margin-top: 70px;
+            padding-bottom: 15px;
+            background-color: #ffffff;
+            border-radius: 1px;
+            box-shadow: 0 2px 4px #888888;
+        }
+
+        .sub {
+            color: #a0a0a0;
+            margin-right: 20px;
+        }
+
+        .foot {
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .cell {
+            height: 80px;
+            border-radius: 6px;
+        }
+
+        .cell:hover {
+            background: #efefef;
+        }
+
+        .cell-file {
+            height: 70px;
+            width: 70px;
+            margin: 5px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 70px;
+            background: #2196f7;
+            float: left;
+            word-wrap: break-word
+        }
+
+        .cell-name {
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 80px;
+            color: #212121;
+            font-size: 20px;
+            line-height: 80px;
+            float: left;
+        }
+
+        .cell-button {
+            padding: 5px;
+            height: 80px;
+            line-height: 70px;
+            float: right;
+            color: #9d9d9d;
+            font-size: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .qrcode {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            background: rgba(50, 50, 50, 0.5);
+            z-index: 999;
+            display: none;
+        }
+
+        #code {
+            margin-top: 10%;
+            width: 256px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="qrcode">
+    <div id="code"></div>
+</div>
+<nav class="navbar navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img height="20px" alt="Brand" src="img/mainlogo.png">
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="full">
+    <div class="container a4">
+        <div class="row">
+            <div class="col-xs-9">
+                <h3>Nutreat项目-三端10月27日更新</h3>
+                <hr>
+            </div>
+            <div class="col-xs-3" style="text-align: right">
+                <img class="label-logo" src="img/logo.png" height="87px">
+            </div>
+        </div>
+        <span class="sub"><span class="glyphicon glyphicon-time"></span> 上传时间：2016年10月27日 10:32</span>
+        <span class="sub"><span class="glyphicon glyphicon-user"></span> 上传作者：李杰[项目负责人]</span>
+        <h4>内容介绍</h4>
+        <hr>
+        <div class="row">
+            <div class="col-xs-6">
+                <h4><span class="glyphicon glyphicon-bullhorn"></span> 新功能</h4>
+                <ul>
+                    <li>
+                        1，实现10分钟预约功能
+                    </li>
+                    <li>
+                        2，整合视频聊天到客户端，营养师端
+                    </li>
+                    <li>
+                        3，实现10分钟预约功能
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <h4><span class="glyphicon glyphicon-wrench"></span> BUG修复</h4>
+                <ul>
+                    <li>
+                        1，用户端-我的菜单页标题修改为'我的菜单'
+                    </li>
+                    <li>
+                        2，用户端-首页闪退问题解决
+                    </li>
+                    <li>
+                        3，营养师端-我的信息点击闪退问题解决
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h4>文件更新</h4>
+        <hr>
+        <ul>
+            <li>
+                <div class="cell">
+                    <div class="cell-file">
+                        DOCX
+                    </div>
+                    <div class="cell-name">
+                        1025会议记录
+                    </div>
+                    <div class="cell-button">
+                        <span class="glyphicon glyphicon-qrcode" data-file="erweima"></span>
+                        <span style="width: 16px"></span>
+                        <span class="glyphicon glyphicon-download" data-file="url"></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell">
+                    <div class="cell-file">
+                        APK
+                    </div>
+                    <div class="cell-name">
+                        用户端安装包(Android)
+                    </div>
+                    <div class="cell-button">
+                        <span class="glyphicon glyphicon-qrcode"
+                              data-file="http://music.163.com/api/android/download/latest2"></span>
+                        <span style="width: 16px"></span>
+                        <span class="glyphicon glyphicon-download" data-file="url"></span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cell">
+                    <div class="cell-file">
+                        APK
+                    </div>
+                    <div class="cell-name">
+                        营养师端安装包(Android)
+                    </div>
+                    <div class="cell-button">
+                        <span class="glyphicon glyphicon-qrcode" data-file="erweima"></span>
+                        <span style="width: 16px"></span>
+                        <span class="glyphicon glyphicon-download" data-file="url"></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+        上海生医信息科技有限公司
+    </div>
+</div>
+<!--Jquery文件-->
+<script src="js/Jquery-3.1.0.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.qrcode.min.js"></script>
+<script type="application/javascript">
+    $('.glyphicon-qrcode').click(function () {
+        alert(this.dataset.file)
+        $('#code').qrcode(this.dataset.file)
+        $('.qrcode').show()
+    })
+    $('.qrcode').click(function () {
+        $('.qrcode').hide()
+        $('#code').html("")
+    })
+    $('.glyphicon-download').click(function () {
+        alert(this.dataset.file)
+    })
+</script>
+</body>
+</html>
