@@ -7,6 +7,8 @@
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--全局CSS文件-->
+    <link rel="stylesheet" href="css/style.css">
     <!--自定义CSS-->
     <style type="text/css">
         html, body {
@@ -20,10 +22,10 @@
         .navbar {
             background-color: #2196f7;
             border-radius: 0;
-            box-shadow: 0 2px 4px #888888;
+            box-shadow: rgba(0, 0, 0, 0.117647) 0px 0px 2px 0px, rgba(0, 0, 0, 0.239216) 0px 2px 2px 0px;
         }
 
-        .icon-bar{
+        .icon-bar {
             background-color: #ffffff;
         }
 
@@ -32,99 +34,121 @@
             overflow: scroll;
         }
 
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 950px) {
             .container {
                 width: 900px;
             }
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+
+            }
+
             .label-logo {
                 padding: 20px;
             }
-            ul{
+
+            ul {
                 padding-left: 15px;
                 padding-right: 15px;
             }
-            .cell-name{
+
+            .cell-name {
                 font-size: 20px;
                 margin-left: 20px;
                 margin-right: 20px;
                 height: 80px;
                 line-height: 80px;
             }
-            .cell{
+
+            .cell {
                 height: 80px;
             }
-            .cell-file{
+
+            .cell-file {
                 font-size: 30px;
                 line-height: 70px;
                 height: 70px;
                 width: 70px;
             }
-            .cell-button{
+
+            .cell-button {
                 height: 80px;
                 line-height: 70px;
                 font-size: 30px;
             }
-            .foot{
+
+            .foot {
                 height: 200px;
                 line-height: 200px;
             }
-            #code{
+
+            #code {
                 margin-top: 10%;
             }
         }
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
             .container {
 
             }
+
             .label-logo {
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
-            .sub{
+
+            .sub {
                 display: block;
             }
+
             ul {
-                padding-left: 0px;
-                padding-right: 0px;
+                padding-left: 0;
+                padding-right: 0;
             }
-            .cell-name{
+
+            .cell-name {
                 height: 60px;
                 line-height: 60px;
                 font-size: 15px;
                 margin-left: 5px;
                 margin-right: 5px;
             }
-            .cell{
+
+            .cell {
                 height: 60px;
             }
-            .cell-file{
+
+            .cell-file {
                 font-size: 20px;
                 line-height: 50px;
                 height: 50px;
                 width: 50px;
             }
-            .cell-button{
+
+            .cell-button {
                 height: 60px;
                 line-height: 50px;
                 font-size: 16px;
             }
-            .foot{
+
+            .foot {
                 height: 100px;
                 line-height: 100px;
             }
-            #code{
+
+            #code {
                 margin-top: 30%;
             }
         }
-
 
         .a4 {
             margin-top: 70px;
             padding-bottom: 15px;
             background-color: #ffffff;
             border-radius: 1px;
-            box-shadow: 0 2px 4px #888888;
+            box-shadow: rgba(0, 0, 0, 0.117647) 0px 0px 2px 0px, rgba(0, 0, 0, 0.239216) 0px 2px 2px 0px;
         }
 
         .sub {
@@ -168,10 +192,12 @@
         ul {
             list-style: none;
         }
-        .nav a{
+
+        .nav a {
             color: #ffffff;
         }
-        .nav li a:hover,.nav li a:focus{
+
+        .nav li a:hover {
             background-color: #1b90ed;
         }
 
@@ -180,7 +206,7 @@
             width: 100%;
             position: fixed;
             background: rgba(50, 50, 50, 0.5);
-            z-index: 999;
+            z-index: 1031;
             display: none;
         }
 
@@ -199,7 +225,8 @@
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -210,7 +237,7 @@
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="#">内容介绍</a></li>
                 <li><a href="#">文件更新</a></li>
@@ -231,11 +258,28 @@
         </div>
         <span class="sub"><span class="glyphicon glyphicon-time"></span> 上传时间：2016年10月27日 10:32</span>
         <span class="sub"><span class="glyphicon glyphicon-user"></span> 上传作者：李杰[项目负责人]</span>
+        <h4>会议记录</h4>
+        <hr>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul>
+                    <li>
+                        1，上线
+                    </li>
+                    <li>
+                        2，整合视频聊天到客户端，营养师端
+                    </li>
+                    <li>
+                        3，实现10分钟预约功能
+                    </li>
+                </ul>
+            </div>
+        </div>
         <h4>内容介绍</h4>
         <hr>
         <div class="row">
             <div class="col-xs-12 col-sm-6">
-                <h4><span class="glyphicon glyphicon-bullhorn"></span> 新功能</h4>
+                <h5><span class="glyphicon glyphicon-bullhorn"></span> 新功能</h5>
                 <ul>
                     <li>
                         1，实现10分钟预约功能
@@ -249,7 +293,7 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-6">
-                <h4><span class="glyphicon glyphicon-wrench"></span> BUG修复</h4>
+                <h5><span class="glyphicon glyphicon-wrench"></span> BUG修复</h5>
                 <ul>
                     <li>
                         1，用户端-我的菜单页标题修改为'我的菜单'
