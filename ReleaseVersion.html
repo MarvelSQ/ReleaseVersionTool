@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ReleaseVersion</title>
 
     <!-- 新 Bootstrap 核心 CSS 文件 -->
@@ -22,18 +23,101 @@
             box-shadow: 0 2px 4px #888888;
         }
 
+        .icon-bar{
+            background-color: #ffffff;
+        }
+
         .full {
             height: 100%;
             overflow: scroll;
         }
 
-        .container {
-            width: 900px;
+        @media screen and (min-width: 768px){
+            .container {
+                width: 900px;
+            }
+            .label-logo {
+                padding: 20px;
+            }
+            ul{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .cell-name{
+                font-size: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                height: 80px;
+                line-height: 80px;
+            }
+            .cell{
+                height: 80px;
+            }
+            .cell-file{
+                font-size: 30px;
+                line-height: 70px;
+                height: 70px;
+                width: 70px;
+            }
+            .cell-button{
+                height: 80px;
+                line-height: 70px;
+                font-size: 30px;
+            }
+            .foot{
+                height: 200px;
+                line-height: 200px;
+            }
+            #code{
+                margin-top: 10%;
+            }
         }
 
-        .label-logo {
-            padding: 20px;
+        @media screen and (max-width: 768px){
+            .container {
+
+            }
+            .label-logo {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            .sub{
+                display: block;
+            }
+            ul {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .cell-name{
+                height: 60px;
+                line-height: 60px;
+                font-size: 15px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .cell{
+                height: 60px;
+            }
+            .cell-file{
+                font-size: 20px;
+                line-height: 50px;
+                height: 50px;
+                width: 50px;
+            }
+            .cell-button{
+                height: 60px;
+                line-height: 50px;
+                font-size: 16px;
+            }
+            .foot{
+                height: 100px;
+                line-height: 100px;
+            }
+            #code{
+                margin-top: 30%;
+            }
         }
+
 
         .a4 {
             margin-top: 70px;
@@ -49,13 +133,10 @@
         }
 
         .foot {
-            height: 200px;
             text-align: center;
-            line-height: 200px;
         }
 
         .cell {
-            height: 80px;
             border-radius: 6px;
         }
 
@@ -64,42 +145,34 @@
         }
 
         .cell-file {
-            height: 70px;
-            width: 70px;
             margin: 5px;
             border-radius: 5px;
             color: #ffffff;
-            font-size: 30px;
             text-align: center;
-            line-height: 70px;
             background: #2196f7;
             float: left;
             word-wrap: break-word
         }
 
         .cell-name {
-            margin-left: 20px;
-            margin-right: 20px;
-            height: 80px;
             color: #212121;
-            font-size: 20px;
-            line-height: 80px;
             float: left;
         }
 
         .cell-button {
             padding: 5px;
-            height: 80px;
-            line-height: 70px;
             float: right;
             color: #9d9d9d;
-            font-size: 30px;
         }
 
         ul {
             list-style: none;
-            padding-left: 15px;
-            padding-right: 15px;
+        }
+        .nav a{
+            color: #ffffff;
+        }
+        .nav li a:hover,.nav li a:focus{
+            background-color: #1b90ed;
         }
 
         .qrcode {
@@ -112,7 +185,6 @@
         }
 
         #code {
-            margin-top: 10%;
             width: 256px;
             margin-left: auto;
             margin-right: auto;
@@ -125,21 +197,35 @@
 </div>
 <nav class="navbar navbar-fixed-top">
     <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="#">
                 <img height="20px" alt="Brand" src="img/mainlogo.png">
             </a>
         </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">内容介绍</a></li>
+                <li><a href="#">文件更新</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
     </div>
 </nav>
 <div class="full">
     <div class="container a4">
         <div class="row">
-            <div class="col-xs-9">
+            <div class="col-xs-9 col-sm-9">
                 <h3>Nutreat项目-三端10月27日更新</h3>
                 <hr>
             </div>
-            <div class="col-xs-3" style="text-align: right">
+            <div class="col-xs-3 col-sm-3" style="text-align: right">
                 <img class="label-logo" src="img/logo.png" height="87px">
             </div>
         </div>
@@ -148,7 +234,7 @@
         <h4>内容介绍</h4>
         <hr>
         <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-sm-6">
                 <h4><span class="glyphicon glyphicon-bullhorn"></span> 新功能</h4>
                 <ul>
                     <li>
@@ -162,7 +248,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-xs-6">
+            <div class="col-xs-12 col-sm-6">
                 <h4><span class="glyphicon glyphicon-wrench"></span> BUG修复</h4>
                 <ul>
                     <li>
